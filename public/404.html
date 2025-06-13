@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    const path = window.location.pathname;
+    const repoName = '/your-repo-name'; // Replace with your repo name
+    localStorage.setItem('redirectPath', path.replace(repoName, ''));
+    window.location.href = repoName;
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
